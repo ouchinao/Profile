@@ -39,7 +39,8 @@ class HomePage extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
               Text(
-                'I am interested in robotics development or web application development.',
+                'I\'m doing a Master\'s degree at Toyohashi University of Technology.',
+                'I\'m interested in robotics and web application development.',
               ),
               SizedBox(
                 height: 32,
