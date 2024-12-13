@@ -5,8 +5,12 @@
 //
 
 import 'package:flutter/material.dart';
-import 'device_type.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+const SpaceText = 16.0;
+const SpaceHeight = 32.0;
+const IconSize = 100.0;
+
 
 void main() {
   runApp(PortfolioApp(),
@@ -32,18 +36,20 @@ class HomePage extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                height: 64,
+                height: SpaceHeight * 2,
               ),
               Text(
                 'Ouchi Nao',
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
-              Text(
-                'I\'m doing a Master\'s degree at Toyohashi University of Technology.',
-                'I\'m interested in robotics and web application development.',
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: SpaceText),
+                child: Text(
+                  'I\'m doing a Master\'s degree at Toyohashi University of Technology.\nI\'m interested in robotics development and web application development.',
+                )
               ),
               SizedBox(
-                height: 32,
+                height: SpaceHeight,
               ),
               Text(
                 'Hobby', 
@@ -53,7 +59,7 @@ class HomePage extends StatelessWidget {
                 'Travel, Harry Potter, Sauna, etc...',
               ),
               SizedBox(
-                height: 32,
+                height: SpaceHeight,
               ),
               Text(
                 'Using',
@@ -63,7 +69,7 @@ class HomePage extends StatelessWidget {
                 'python, C++, Dart, flutter, ROS2, Docker, etc...',
               ),
               SizedBox(
-                height: 32,
+                height: SpaceHeight,
               ),
               Text(
                 'Study',
@@ -73,7 +79,7 @@ class HomePage extends StatelessWidget {
                 'communication robotics',
               ),
               SizedBox(
-                height: 32,
+                height: SpaceHeight,
               ),
               Text(
                 'Contact',
@@ -83,7 +89,7 @@ class HomePage extends StatelessWidget {
                 'ouchi.nao.jg@tut.jp',
               ),
               SizedBox(
-                height: 32,
+                height: SpaceHeight,
               ),
               GestureDetector(
                 onTap: () {
@@ -93,8 +99,8 @@ class HomePage extends StatelessWidget {
                 },
                 child: Image.asset(
                   'assets/GitHub-Logo.png',
-                  width: 100,
-                  height: 100,
+                  width: IconSize,
+                  height: IconSize,
                 ),
               ),
             ],
