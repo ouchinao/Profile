@@ -45,7 +45,7 @@ class HomePage extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: SpaceText),
                 child: Text(
-                  'I\'m doing a Master\'s degree at Toyohashi University of Technology.\nI\'m interested in robotics development and web application development.',
+                  'I\'m doing a Master\'s degree at Toyohashi University of Technology. And I\'m interested in robotics development and web application development.',
                 )
               ),
               SizedBox(
