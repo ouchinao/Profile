@@ -39,7 +39,7 @@ class HomePage extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
               Text(
-                'I\'m interested in robotics development or web application development.',
+                'I am interested in robotics development or web application development.',
               ),
               SizedBox(
                 height: 32,
@@ -82,7 +82,7 @@ class HomePage extends StatelessWidget {
                 'ouchi.nao.jg@tut.jp',
               ),
               SizedBox(
-                height: 64,
+                height: 32,
               ),
               GestureDetector(
                 onTap: () {
