@@ -1,1 +1,0 @@
-[My Profile](https://ouchinao.github.io/Profile/)です

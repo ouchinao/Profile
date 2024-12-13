@@ -7,7 +7,6 @@
 import 'package:flutter/material.dart';
 import 'device_type.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:dots_indicator/dots_indicator.dart';
 
 void main() {
   runApp(PortfolioApp(),
