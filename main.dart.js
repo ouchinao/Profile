@@ -57014,7 +57014,7 @@ Nl(a){$.a1M().m(0,this,a)}}
 A.zK.prototype={
 V(a){return new A.pK(new A.y9(null),"ouchi\u306e\u30dd\u30fc\u30c8\u30d5\u30a9\u30ea\u30aa",null)}}
 A.y9.prototype={
-V(a){var s=null,r=A.rm(s,64,s),q=A.hy("Ouchi Nao",A.ce(a).p2.e),p=A.hy("I'm interested in robotics development or web application development.",s),o=A.rm(s,32,s),n=A.hy("Hobby",A.ce(a).p2.e),m=A.hy("Travel, Harry Potter, Sauna, etc...",s),l=A.rm(s,32,s),k=A.hy("Using",A.ce(a).p2.e),j=A.hy("python, C++, Dart, flutter, ROS2, Docker, etc...",s),i=A.rm(s,32,s),h=A.hy("Study",A.ce(a).p2.e),g=A.hy("communication robotics",s),f=A.rm(s,32,s),e=A.hy("Contact",A.ce(a).p2.e),d=A.hy("ouchi.nao.jg@tut.jp",s),c=A.rm(s,64,s)
+V(a){var s=null,r=A.rm(s,64,s),q=A.hy("Ouchi Nao",A.ce(a).p2.e),p=A.hy("I am interested in robotics development or web application development.",s),o=A.rm(s,32,s),n=A.hy("Hobby",A.ce(a).p2.e),m=A.hy("Travel, Harry Potter, Sauna, etc...",s),l=A.rm(s,32,s),k=A.hy("Using",A.ce(a).p2.e),j=A.hy("python, C++, Dart, flutter, ROS2, Docker, etc...",s),i=A.rm(s,32,s),h=A.hy("Study",A.ce(a).p2.e),g=A.hy("communication robotics",s),f=A.rm(s,32,s),e=A.hy("Contact",A.ce(a).p2.e),d=A.hy("ouchi.nao.jg@tut.jp",s),c=A.rm(s,32,s)
 return new A.qT(new A.B4(A.adj(new A.wP(B.aW,B.cK,B.oD,B.ci,s,B.KU,s,A.b([r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,A.a6h(s,new A.pk(A.agY(s,s,new A.o2("assets/GitHub-Logo.png",s,s)),100,100,s),B.aI,!1,s,s,s,s,s,s,s,s,s,s,s,s,new A.Nk(),s,s,s)],t.nA),s),s,s),s),s)}}
 A.Nk.prototype={
 $0(){A.a1t("https://github.com/ouchinao")},
