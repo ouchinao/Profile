@@ -56,7 +56,7 @@ class HomePage extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
               Text(
-                'Travel, Harry Potter, Sauna, etc...',
+                'Travel, Coffee, Harry Potter, Sauna, etc...',
               ),
               SizedBox(
                 height: SpaceHeight,
@@ -66,7 +66,7 @@ class HomePage extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
               Text(
-                'python, C++, Dart, flutter, ROS2, Docker, etc...',
+                'python, C++, Dart, ROS2, flutter, Docker, etc...',
               ),
               SizedBox(
                 height: SpaceHeight,
