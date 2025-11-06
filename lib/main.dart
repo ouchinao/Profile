@@ -7,7 +7,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-const SpaceText = 16.0;
+const SpaceText = 30.0;
 const SpaceHeight = 32.0;
 const IconSize = 100.0;
 
@@ -77,6 +77,16 @@ class HomePage extends StatelessWidget {
               ),
               Text(
                 'communication robotics',
+              ),
+              SizedBox(
+                height: SpaceHeight,
+              ),
+              Text(
+                'Qualification',
+                style: Theme.of(context).textTheme.headlineMedium,
+              ),
+              Text(
+                'Applied Information Technology Engineer Examination',
               ),
               SizedBox(
                 height: SpaceHeight,
