@@ -100,32 +100,43 @@ class HomePage extends StatelessWidget {
                     const SizedBox(height: 40),
 
                     // Hobby & Study
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Expanded(
-                          child: const GlassSection(
-                            title: 'cat hobby.txt',
-                            content: Text('Coffee, Sake, Eating, etc...'),
-                          ).animate().fadeIn(delay: 800.ms),
-                        ),
-                        const SizedBox(width: 20),
-                        Expanded(
-                          child: const GlassSection(
-                            title: 'grep -i "study"',
-                            content: Text('Communication Robotics'),
-                          ).animate().fadeIn(delay: 1200.ms),
-                        ),
-                      ],
+                    LayoutBuilder(
+                      builder: (context, constraints) {
+                        final isNarrow = constraints.maxWidth < 600;
+                        return Flex(
+                          direction: isNarrow ? Axis.vertical : Axis.horizontal,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Flexible(
+                              flex: isNarrow ? 0 : 1,
+                              child: const GlassSection(
+                                title: 'cat hobby.txt',
+                                content: Text('Coffee, Sake, Eating, etc...'),
+                              ).animate().fadeIn(delay: 1200.ms).slideX(),
+                            ),
+                            SizedBox(
+                              width: isNarrow ? 0 : 20,
+                              height: isNarrow ? 40 : 0,
+                            ),
+                            Flexible(
+                              flex: isNarrow ? 0 : 1,
+                              child: const GlassSection(
+                                title: 'grep -i "study"',
+                                content: Text('Communication Robotics'),
+                              ).animate().fadeIn(delay: 1600.ms).slideX(),
+                            ),
+                          ],
+                        );
+                      },
                     ),
 
                     const SizedBox(height: 40),
 
                     // Qualification & Contact
                     const GlassSection(
-                      title: 'sudo systemctl status qualification',
+                      title: 'ls certifications/',
                       content: Text('Applied Information Technology Engineer Examination'),
-                    ).animate().fadeIn(delay: 1600.ms),
+                    ).animate().fadeIn(delay: 2000.ms).slideX(),
 
                     const SizedBox(height: 40),
 
@@ -146,7 +157,7 @@ class HomePage extends StatelessWidget {
                           GitHubButton(),
                         ],
                       ),
-                    ).animate().fadeIn(delay: 2000.ms),
+                    ).animate().fadeIn(delay: 2400.ms).slideX(),
                   ],
                 ),
               ),
