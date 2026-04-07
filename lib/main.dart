@@ -135,7 +135,13 @@ class HomePage extends StatelessWidget {
                     // Qualification & Contact
                     const GlassSection(
                       title: 'ls certifications/',
-                      content: Text('Applied Information Technology Engineer Examination'),
+                      content: Wrap(
+                        spacing: 12,
+                        runSpacing: 12,
+                        children: [
+                          CertsChip(label: 'Applied Information Technology Engineer Examination'),
+                        ],
+                      ),
                     ).animate().fadeIn(delay: 2000.ms).slideX(),
 
                     const SizedBox(height: 40),
@@ -264,6 +270,30 @@ class GlassSection extends StatelessWidget {
 class SkillChip extends StatelessWidget {
   final String label;
   const SkillChip({super.key, required this.label});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: const Color(0xFF64FFDA).withOpacity(0.5)),
+        color: const Color(0xFF64FFDA).withOpacity(0.1),
+      ),
+      child: Text(
+        label,
+        style: GoogleFonts.firaCode(
+          color: const Color(0xFF64FFDA),
+          fontSize: 14,
+        ),
+      ),
+    );
+  }
+}
+
+class CertsChip extends StatelessWidget {
+  final String label;
+  const CertsChip({super.key, required this.label});
 
   @override
   Widget build(BuildContext context) {
