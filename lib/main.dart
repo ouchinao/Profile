@@ -164,6 +164,27 @@ class HomePage extends StatelessWidget {
                         ],
                       ),
                     ).animate().fadeIn(delay: 2400.ms).slideX(),
+
+                    const SizedBox(height: 64),
+
+                    // License
+                    Center(
+                      child: TextButton(
+                        onPressed: () {
+                          showLicensePage(
+                            context: context,
+                            applicationName: 'Ouchi\'s Portfolio',
+                          );
+                        },
+                        child: Text(
+                          'Licenses',
+                          style: GoogleFonts.firaCode(
+                            color: Colors.white38,
+                            fontSize: 12,
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
